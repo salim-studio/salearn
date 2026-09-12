@@ -130,14 +130,14 @@ salearn/
 
 ```mermaid
 flowchart LR
-    DB[(SQL\nsqlite · duckdb\npostgres · mysql)] --> IO[salearn.io]
-    IO --> EDA[salearn.eda\nprofile + report]
-    EDA --> CLEAN[salearn.clean\n+ features]
-    CLEAN --> ML{classic ML\nsklearn API}
-    CLEAN --> AUTO[salearn.automl]
-    ML --> EXP[salearn.explain]
+    DB[("SQL databases")] --> IO["salearn.io"]
+    IO --> EDA["salearn.eda"]
+    EDA --> CLEAN["clean + features"]
+    CLEAN --> ML["classic ML"]
+    CLEAN --> AUTO["salearn.automl"]
+    ML --> EXP["salearn.explain"]
     AUTO --> EXP
-    EXP --> REG[(salearn.persist\nregistry)]
+    EXP --> REG[("model registry")]
 ```
 
 ## Benchmarks
