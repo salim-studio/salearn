@@ -1,0 +1,24 @@
+# Build
+dist/
+build/
+*.egg-info/
+*.egg
+*.whl
+
+# Caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+
+# Envs
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
+Thumbs.db

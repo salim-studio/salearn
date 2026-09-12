@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "salearn"
+version = "1.0.0"
+description = "salearn — sklearn-compatible ML plus databases, EDA, AutoML, time-series and NLP in one import"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "salim-studio" }]
+maintainers = [{ name = "salim-studio" }]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+]
+keywords = ["machine-learning", "sklearn", "data-science", "database", "eda", "automl", "time-series", "nlp"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Database",
+]
+
+[project.urls]
+Homepage = "https://github.com/salim-studio/salearn"
+Documentation = "https://github.com/salim-studio/salearn#readme"
+Repository = "https://github.com/salim-studio/salearn"
+Issues = "https://github.com/salim-studio/salearn/issues"
+
+[project.optional-dependencies]
+speed = ["numba>=0.57"]
+db = ["sqlalchemy>=2.0", "duckdb>=0.9", "pandas>=1.5", "pyarrow>=10"]
+eda = ["pandas>=1.5", "matplotlib>=3.6"]
+nlp = ["pandas>=1.5"]
+all = ["numba>=0.57", "scipy>=1.10", "pytest", "sqlalchemy>=2.0", "duckdb>=0.9", "pandas>=1.5", "pyarrow>=10", "matplotlib>=3.6"]
+test = ["pytest", "scikit-learn", "pandas"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["salearn*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
