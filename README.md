@@ -169,4 +169,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Bug reports and PRs welcome.
 
 Copyright (c) 2026 salim-slimani
 
-MIT — see [LICENSE](LICENSE). Changelog in [CHANGELOG.md](CHANGELOG.md).
+MIT — see [LICENSE](LICENSE). © 2026 salim-slimani. Changelog in [CHANGELOG.md](CHANGELOG.md).
