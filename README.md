@@ -167,4 +167,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Bug reports and PRs welcome.
 
 ## License
 
+Copyright (c) 2026 salim-slimani
+
 MIT — see [LICENSE](LICENSE). Changelog in [CHANGELOG.md](CHANGELOG.md).
